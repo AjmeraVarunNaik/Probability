@@ -108,6 +108,22 @@ ASSIGNMENT-2
 \let\vec\mathbf
 Question 12.13.5.10 :  A person buys a lottery ticket in 50 lotteries in each of which his chance of winning a prize is $\frac{1}{100}$. What is the probability that he will win a prize a) atleast once b) exactly once c) atleast twice ?\\
 \solution Let X be number of winning prizes in 50 lotteries. The trials are Bernoulli trials.X has binomial distribution with n = 50 and p = $\frac{1}{100}$ 
+\begin{table}[h]
+\centering
+\caption{parameters for CDF}
+\label{table.2:ncert/12/13/5/10/}
+\begin{tabular}{|c|c|}
+\hline
+parameter & value\\
+\hline
+$n$ & 50\\
+\hline
+$p$ & $\frac{1}{100}$\\
+\hline
+$q$ & $\frac{99}{100}$\\
+\hline
+\end{tabular}
+\end{table}
 \begin{align}
 q &= 1 - p = 1-\frac{1}{100} \\
 q &=   \frac{99}{100} \\
@@ -115,32 +131,26 @@ p_X(k) &= \pr{X=k} \\
 p_X(k) &= \comb{n}{k} q^{n-k}p^{k} \\
         &= \comb{50}{k}\brak{\frac{99}{100}}^{50-k}\brak{\frac{1}{100}}^{k} 
 \end{align} 
+
 The Cdf for the following pmf :  
 \begin{align}
 F_X(k) &= p_X(0) + p_X(1) + p_X(2) + ... + p_X(k) \\
-       &= \comb{50}{0}\brak{\frac{99}{100}}^{50} + \comb{50}{1}\brak{\frac{99}{100}}^{49}\brak{\frac{1}{100}} + ... +\comb{50}{k}\brak{\frac{99}{100}}^{50-k}\brak{\frac{1}{100}}^{k}  \\ 
 F_X(k) &= \sum_{i=0}^{k} \comb{5}{i}\brak{\frac{99}{100}}^{50-i}\brak{\frac{1}{100}}^{i}
 \end{align}
   \begin{align}
 a)  \pr{X \geq 1} &= 1 - \pr{X < 1} \\
   &= 1 - F_X(0)  \\
   &= 1 - \comb{50}{0}\brak{\frac{99}{100}}^{50} \\
-  &= 1 - \brak{\frac{99}{100}}^{50} \\
   &= 0.394
  \end{align}
  \begin{align}
 b)  \pr{X=1} &= \comb{50}{1}\brak{\frac{99}{100}}^{49}\brak{\frac{1}{100}}^{1} \\
-  &= 50\brak{\frac{99}{100}}^{49}\brak{\frac{1}{100}}^{1} \\
-  &= \frac{1}{2}\brak{\frac{99}{100}}^{49} \\
   &= 0.3055
 \end{align} 
 \begin{align}
 c)  \pr{X \geq 2}  &= 1 - \pr{X<2}\\  
    &= 1 - F_X(1) \\
-   &= 1 -  \brak{\comb{50}{0}\brak{\frac{99}{100}}^{50}+ \comb{50}{1}\brak{\frac{99}{100}}^{49}\brak{\frac{1}{100}}} \\
    &= \brak{1 - \frac{99}{100}}^{50} - \frac{1}{2}\brak{\frac{99}{100}}^{49} \\
-   &= 1 - \brak{\frac{99}{100}}^{49}\brak{\frac{149}{100}} \\
-   &= 1 - \brak{\frac{149}{100}}\brak{\frac{99}{100}}^{49} \\
    &= 0.0894
 \end{align}
 \end{document}
