@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  8 SEP 2023 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  12 SEP 2023 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1207,10 +1207,10 @@ Package rerunfilecheck Info: Checksums for `A_2.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29090 strings out of 480129
- 573897 string characters out of 5893410
- 841524 words of memory out of 5000000
- 46432 multiletter control sequences out of 15000+600000
+ 29098 strings out of 480129
+ 573994 string characters out of 5893410
+ 843524 words of memory out of 5000000
+ 46435 multiletter control sequences out of 15000+600000
  537674 words of font info for 169 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  101i,11n,96p,407b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1222,10 +1222,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on A_2.pdf (1 page, 49634 bytes).
+Output written on A_2.pdf (1 page, 49045 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 25 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

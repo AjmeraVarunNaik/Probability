@@ -1,25 +1,29 @@
 import numpy as np
 
-# Probability of winning in one specific lottery
-p_win = 1/100
+def simulate_lottery(p, n_lotteries, X):
+    # Simulate the lottery results for each of the num_simulations trials
+    #  num_simulations = X 
+    trials_matrix = np.random.random((X, n_lotteries)) < p
+    
+    # Count the number of times each simulation wins a prize
+    wins_per_simulation = np.sum(trials_matrix, axis=1)
+    
+    # Calculate the probabilities based on simulation results
+    prob_at_least_once = np.count_nonzero(wins_per_simulation > 0) / X
+    prob_exactly_once = np.count_nonzero(wins_per_simulation == 1) / X
+    prob_at_least_twice = np.count_nonzero(wins_per_simulation >= 2) / X
+    
+    return prob_at_least_once, prob_exactly_once, prob_at_least_twice
 
-# Probability of not winning in one specific lottery
-p_not_win = 1 - p_win
+# Parameters
+p_lottery = 1/100
+n_lotteries = 50
+X = 1000000  # Adjust the number of simulations as needed
 
-# Number of lotteries
-num_lotteries = 50
+# Simulate and calculate probabilities
+prob_at_least_once, prob_exactly_once, prob_at_least_twice = simulate_lottery(p_lottery, n_lotteries, X)
 
-# a) Probability of winning at least once
-prob_at_least_once = 1 - np.power(p_not_win, num_lotteries)
-
-# b) Probability of winning exactly once
-prob_exactly_once = p_win * np.power(p_not_win, num_lotteries - 1) * num_lotteries
-
-# c) Probability of winning at least twice
-prob_not_win_twice = np.power(p_not_win, num_lotteries) + p_win * np.power(p_not_win, num_lotteries - 1) * num_lotteries
-prob_at_least_twice = 1 - prob_not_win_twice
-
-print("a) Probability of winning at least once:", prob_at_least_once)
-print("b) Probability of winning exactly once:", prob_exactly_once)
-print("c) Probability of winning at least twice:", prob_at_least_twice)
+print(f"Simulated Probability of winning at least once: {prob_at_least_once:.8f}")
+print(f"Simulated Probability of winning exactly once: {prob_exactly_once:.8f}")
+print(f"Simulated Probability of winning at least twice: {prob_at_least_twice:.8f}")
 
