@@ -40,7 +40,7 @@
 
 \title{
 %	\logo{
-ASSIGNMENT-2
+ASSIGNMENT-3
 %	}
 }
 \author{A Varun Naik - EE22BTECH11004}
@@ -107,19 +107,19 @@ ASSIGNMENT-2
 \newcommand{\rect}{\,\text{rect}\,}
 \let\vec\mathbf
 Question 16.2023:   Let X be a random variable with probability density function
-
 $f(x) =
 \begin{cases}
     \alpha\lambda x^{\alpha-1}e^{-\lambda x^{\alpha}} & \text{if } x > 0 \\
     0 & \text{otherwise}
 \end{cases}$
-
-
 If the median of $X$ is 1 and the third quantile is 2 then $\brak{\alpha, \lambda}$ equals \\
-\solution  Given
+\solution 
+If median of random variable X is 1, then CDF of X evaluated at 1 is equal to $\frac{1}{2}$ \\
+The third quantile is defined as \\
 \begin{align}
-F(1) &= 1/2 \\
-F(2) &= 3/4 \\
+\int_{0}^{Q3}f(x)dx &= \frac{3}{4} \\
+Given ,F(1) &= \frac{1}{2} \\
+F(2) &= \frac{3}{4} \\
 F(x) &= \int_{-\infty}^{x} f(x) dx  \\
 x \leq 0 ,  F(x) &= 0 \\
 F(x) &= \alpha \lambda \int_{0}^{x} x^{\alpha-1}e^{-\lambda x^{\alpha}}dx  \\
@@ -132,14 +132,13 @@ F(x)  &= \lambda \int e^{-\lambda y} dy \\
       &= -e^{-\lambda y}\\
 F(x)  &= \brak{-e^{-\lambda x^{\alpha}}}_{0}^{x}\\
 F(x)  &=  1 - e^{-\lambda x^{\alpha}} \\
-F(1)  &= 1/2 \\
-\Rightarrow 1/2 &= 1 - e^{-\lambda}  \\
+F(1)  &= \frac{1}{2} \\
+\Rightarrow \frac{1}{2} &= 1 - e^{-\lambda}  \\
 \lambda &= \ln 2 \\
-F(2)  &= 3/4 \\
-\Rightarrow 3/4 &= 1-e^{-\lambda 2^{\alpha}} \\
+F(2)  &= \frac{3}{4} \\
+\Rightarrow \frac{3}{4} &= 1-e^{-\lambda 2^{\alpha}} \\
 \alpha &= 1 
 \end{align}
 $\therefore \lambda = \ln2$ and $\alpha = 1$
 
- 
  \end{document}
