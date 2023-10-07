@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  3 OCT 2023 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  7 OCT 2023 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,21 +1191,22 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 109--119
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
 []\OT1/txr/m/n/12 Question 16.2023: Let X be a ran-dom
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--119
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
 \OT1/txr/m/n/12 vari-able with prob-a-bil-ity den-sity func-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--119
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
 
 
 ] (./main.aux)
@@ -1219,9 +1220,9 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29060 strings out of 480129
- 573550 string characters out of 5893410
- 836527 words of memory out of 5000000
+ 29059 strings out of 480129
+ 573537 string characters out of 5893410
+ 835527 words of memory out of 5000000
  46408 multiletter control sequences out of 15000+600000
  527884 words of font info for 143 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -1234,10 +1235,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 49603 bytes).
+Output written on main.pdf (1 page, 48737 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 78 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
